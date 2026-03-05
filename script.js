@@ -214,11 +214,11 @@ if (contactForm) {
     });
 }
 
-// Download CV functionality
+// Download CV functionality - Google Drive link
 document.getElementById('downloadCV').addEventListener('click', (e) => {
-    e.preventDefault();
-    // You can replace this with actual CV download link
-    alert('CV download will be available soon!');
+    // لا نستخدم preventDefault هنا لأننا نريد الرابط يعمل بشكل طبيعي
+    // الرابط سيفتح في تبويب جديد بفضل target="_blank"
+    console.log('Opening CV from Google Drive');
 });
 
 // Parallax Effect
